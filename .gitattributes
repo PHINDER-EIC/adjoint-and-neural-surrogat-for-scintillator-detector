@@ -1,0 +1,6 @@
+# keep data files byte-identical (checked against data/MANIFEST.sha256)
+data/** -text
+*.sha256 -text
+*.h5 binary
+*.pt binary
+*.pdf binary

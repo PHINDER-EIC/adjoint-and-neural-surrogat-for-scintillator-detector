@@ -1,0 +1,4 @@
+# separate environment for Geant4 11.4.1 (pipeline/7_geant4, analysis/events); also needs the G4ENSDFSTATE3.0 dataset
+geant4_pybind==0.1.3
+numpy==2.4.6
+h5py==3.16.0

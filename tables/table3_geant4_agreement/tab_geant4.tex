@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Agreement with Geant4 for channel~0: captured fraction in 5 emission regions of 8 test geometries (40 values;
+20 for the forward engine, run on 4 geometries). Ratio: weighted mean of method/Geant4; rms: rms of (method/Geant4 $-$ 1),
+to be compared with the rms Geant4 statistical error of 1.9\%; $\chi^2$: Eq.~(\ref{eq:chi2}). $\bar t$, $s_t$: rms
+relative difference of the mean arrival time and of the arrival-time spread; the mean differences are below 1\% for all
+methods. JS: mean Jensen--Shannon divergence of the arrival-time distribution, Eq.~(\ref{eq:js}), with the value expected
+from counting noise alone in parentheses. Network: mean over three training seeds.}
+\label{tab:geant4}
+\setlength{\tabcolsep}{7pt}
+\begin{tabular}{lcccccc}
+\hline
+ & ratio & rms (\%) & $\chi^2$ / values & $\bar t$ rms (\%) & $s_t$ rms (\%) & JS ($10^{-3}$ bits) \\
+\hline
+adjoint ($2\times10^5$ roots) & $0.999 \pm 0.003$ & 1.9 & 37 / 40 & 2.0 & 2.6 & 2.6 \;(2.6) \\
+forward engine (JAX)          & $0.986 \pm 0.008$ & 5.3 & 30 / 20 & 4.7 & 5.7 & 12.2 \;(11.3) \\
+network                       & $1.002 \pm 0.004$ & 3.2 & 68 / 40 & 3.1 & 2.8 & 5.8 \;(2.6) \\
+\hline
+\end{tabular}
+\end{table*}

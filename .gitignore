@@ -1,0 +1,12 @@
+# data come from Zenodo (see data/README.md); the geometry banks and the manifest stay in git
+data/*
+!data/README.md
+!data/MANIFEST.sha256
+!data/banks/
+work/
+__pycache__/
+*.pyc
+*.nbi
+*.nbc
+# figures written by the scripts next to themselves (the paper PDFs are tracked)
+figures/*/*.png
