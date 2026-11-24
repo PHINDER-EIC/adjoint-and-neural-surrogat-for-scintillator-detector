@@ -28,6 +28,9 @@ The main files in `derived/`:
 - `sur/`, `gp/`, `abl/`: network, Gaussian-process and ablation predictions on the test geometries.
 - `fd/`: derivative scans, `fd_atlas.h5` and `fd_scan_net.h5`.
 - `events/`: event-study histograms and timings.
+- `fig08/`: data of Fig. 8, from a separate training run.
+  - `figure-data.h5`: one geometry, its two 2×10⁵-root adjoint maps, three network predictions and their mean, and the derived maps.
+  - The same numbers as CSV files (`voxel-data.csv`, `layer-metrics.csv`, guide outlines), plus `metadata.json`.
 - `jax/`: forward-engine runs.
 - The JSON files at the top level of `derived/`: the summaries behind the tables, figures and text.
 

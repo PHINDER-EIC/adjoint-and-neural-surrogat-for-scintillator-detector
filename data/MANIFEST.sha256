@@ -176,6 +176,12 @@ e519f1e2960c6e73c3a747f4788ab84ba91b3b81a571daaf68db265607d4973a *./derived/fd/s
 b7a02b9e6bf135672be07293a85bb1777e03d007c3cc56a87adc4047b43f6c3e *./derived/fd/time_compare.json
 b7259ca1ed99c9988fa9e6c0d21c745c9e01511daed94889294c1fb0c3f4ba70 *./derived/fd/time_derivs.json
 3d9a2617fa1a9b409b7ec7bf3bfcca4df7fde01e46c4048e4b13f2ca2f45b94b *./derived/fd/time_runs.json
+ee3cff047f385964eb5a877421d4cc16417c6d155204506e2a9596471a6b4bb5 *./derived/fig08/figure-data.h5
+4ac0acc701c6e03cd49697182c32d12f8435650c5be711dff836fcf2486dc48c *./derived/fig08/guide0_xy_cm.csv
+52a77e9edfdbd26b919657df46fc678d06af56008d1c9b233040dd645fbc9d49 *./derived/fig08/guide1_xy_cm.csv
+441937215e6a6d4349550fc9164ba36f10f65a6989425abeeb5411416514de04 *./derived/fig08/layer-metrics.csv
+a126b98bcc210828616b847637aa0820e9f41ae72be52c5aab1e9b156f4b96d3 *./derived/fig08/metadata.json
+bd0880992961e51d24f48c7ad9da4b2b2380c250d6816a7f3b23ec8b85464be6 *./derived/fig08/voxel-data.csv
 0aa655d406e189f15e7bf4f96b40b610cb2e8351921e4f22a3bed5a40b460d5a *./derived/forward_summary.json
 654de04e4552aeebd4d89f06e79cdd2f84b03fba5eb2546ee69edc4709612d3a *./derived/g4/fast/m1000000_0.npz
 09da6b44ed6d653cc8030042aa50bffbfbe5d79b19acbe0083f92b5b4d061568 *./derived/g4/fast/m1000000_1.npz

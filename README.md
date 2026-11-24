@@ -71,6 +71,7 @@ python fig06_geant4_comparison.py
 | Fig. 4 | `fig04_detection_maps_vs_roots` | `fig_backtrace_maps.pdf` | reference maps, `banks/bank_test40.json`; reruns the reverse tracer (~1.5 min) |
 | Fig. 6 | `fig06_geant4_comparison` | `figM1_validation_geant4_ch0.pdf` | reference maps, networks, Geant4 region results (`derived/regions.json`, `regions_hist_single.npz`, `ch0_table3.json`, `g4/geom`) |
 | Fig. 7 | `fig07_adjoint_convergence` | `figM2_adjoint_convergence_80.pdf` | both reference files, `derived/adj`, `adj_new`, `bench.json`, `ref_noise.json` |
+| Fig. 8 | `fig08_ensemble_vs_reference` | `Fig-8.pdf` | `derived/fig08/figure-data.h5` (see below) |
 | Fig. 9 | `fig09_error_vs_training_geometries` | `figM4_surrogate_scaling.pdf` | `derived/scaling_combined.json`, `adj_convergence.json` |
 | Fig. 10 | `fig10_dt10_top_bottom_layers` | `fig10_early_time_quantiles.pdf` | reference maps, training atlas, network seed 20261003 |
 | Figs. 11, 12 | `fig11_fig12_dt10_middle_layer_and_vertical_section` | `fig10b_t10_middle_layer.pdf`, `fig10c_t10_cross_section.pdf` | `derived/t10_maps.npz` (from the Fig. 10 script) |
@@ -82,7 +83,15 @@ python fig06_geant4_comparison.py
 Run from a clean checkout with the Zenodo data, every figure script reproduces the PDF used in the paper pixel for
 pixel, and the Table III scripts reproduce their statistics files byte for byte.
 
-Not included, because they are schematics, were drawn by hand, or were made outside this code: Figs. 1, 2, 5, 8 and 16, and Tables I and II.
+Fig. 8 comes from a separate training run with a new split and three networks (seeds 62801–62803).
+`derived/fig08/figure-data.h5` holds everything the figure shows for its geometry (`sobol_independent__021`):
+- the two 2×10⁵-root adjoint maps A and B;
+- the three network predictions and their mean;
+- the derived maps.
+
+Those networks and that run's geometry bank are not part of this release.
+
+Not included, because they are schematics, were drawn by hand, or were made outside this code: Figs. 1, 2, 5 and 16, and Tables I and II.
 
 ## Rebuilding the data
 
